@@ -3,62 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="js">
+    <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css\styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1 class="main-title">Kalkulator BMI</h1>
     </header>
+
     <main>
-        <aside>
-            <article>
+        <!-- Form Kalkulator BMI -->
+        <form id="bmiForm">
+            <h3>Jenis Kelamin</h3>
+            <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki" required>
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan" required>
+            <label for="perempuan">Perempuan</label>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Distinctio voluptatem eum odio et. Qui, quam temporibus quas at tenetur neque, 
-                quibusdam fuga rerum rem porro impedit eligendi dignissimos, vitae mollitia?</p>
-                
-            </article>
+            <h3>Usia</h3>
+            <input type="number" id="usia" name="usia" placeholder="Masukkan usia" required>
 
-            <form>
-                 <h3>Jenis Kelamin</h3>
-                <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki"><label for="laki-laki">laki-laki</label>
-                <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan"><label for="Perempuan">perempuan</label>
+            <h3>Berat Badan (kg)</h3>
+            <input type="number" id="berat" name="berat" placeholder="Masukkan berat badan" required>
 
-                <div>
-                    <h3>Berat Badan</h3>
-                    <input type="number">
-                </div>
+            <h3>Tinggi Badan (cm)</h3>
+            <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan tinggi badan" required>
 
-                <div class="form-button-container">
-                    <button class="button bg-hitung">Hitung BMI</button>
-                    <button class="button bg-reset">Reset</button>
-                </div>
+            <div class="form-button-container">
+                <button type="button" class="button bg-hitung" onclick="hitungBMI()">Hitung BMI</button>
+                <button type="reset" class="button bg-reset">Reset</button>
+            </div>
+        </form>
 
-            </form> 
-
-            <article>
-                <header>
-                    <h2>Keterangan : Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum libero possimus, 
-                        facilis dolore pariatur temporibus itaque nemo magnam aliquid sed, laborum dolor iure recusandae? 
-                        Commodi sequi consequuntur debitis dolorem.</h2>
-                </header>
-            </article>
-        </aside>
-
-        <aside>
-            <section>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Distinctio voluptatem eum odio et. Qui, quam temporibus quas at tenetur neque, 
-                    quibusdam fuga rerum rem porro impedit eligendi dignissimos, vitae mollitia?</p>
-
-            </section>
+        <!-- Hasil Kalkulasi BMI -->
+        <aside id="hasilBMI">
+            <div class="result placeholder-text">
+                Silahkan isi kalkulator untuk mendapatkan hasil.
+            </div>
+            <div class="description">
+                <p>Gunakan kalkulator di sebelah kiri untuk menghitung BMI Anda. BMI (Body Mass Index) adalah pengukuran standar untuk mengetahui apakah berat badan Anda ideal, kurang, atau berlebih.</p>
+            </div>
         </aside>
     </main>
 
     <footer>
-        <p>Dibuat oleh Renka:)</p>
+        <p>Dibuat oleh Renka :)</p>
     </footer>
+
 </body>
 </html>

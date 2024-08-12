@@ -1,49 +1,101 @@
-.main-title {
-    text-align: center;
-}
-main {
-    display: flex;
-}
-
-form {
-    padding: 12px;
-    background-color: aliceblue;
-}
-aside {
-    padding: 48px;
-}
-.button {
-    height: 30px;
-    background-color: mediumaquamarine;
-    border-radius: 4px;
-    border: none;
-}
-
-.bg-hitung {
-    background-color: mediumaquamarine ;
-}
-
-.bg-reset {
-    background-color: orangered;
-    color: whitesmoke;
-}
-
-.form-button-container {
-    margin-top: 10px;
-    margin-bottom: 15px;}
-
-input [type-number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 14px;
-
-}
-footer {
-    text-align: center;
-}
+        /* Animasi loading */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: 	#5e77d3;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        main {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgb(175, 238, 238);
+            background-color: #9aadec;
+            border-radius: 8px;
+        }
+        form {
+            flex: 1;
+            padding: 20px;
+            background-color: #dce3fa;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        form h3 {
+            margin-bottom: 10px;
+        }
+        form input[type="number"], form input[type="radi"] {
+            width: 95%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #000080;
+            border-radius: 4px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        form .form-button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        form .button {
+            height: 40px;
+            background-color: #00BFFF;
+            border-radius: 4px;
+            border: none;
+            width: 48%;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        form .button.bg-reset {
+            background-color: orangered;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: 	#dce3fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+        .result {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .placeholder-text {
+            color: #193468;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #d22727;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            form {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
