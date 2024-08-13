@@ -4,7 +4,9 @@
             100% { opacity: 1; }
         }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: "Roboto";
+            font-weight: 500;
+            font-style: normal;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -12,10 +14,36 @@
             padding: 0;
             animation: fadeIn 1s ease-in-out;
         }
-        header, footer {
+        
+        header {
+            color: white;
+            padding: auto;
+
+        }
+        header {
+            text-align: left;
+            background-color: 		#193468;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .main-title {
+            font-size: 40px;
+            padding-left: 40px;
+            box-sizing: border-box;
+            font-family: "Roboto";
+            font-weight: 150;
+            font-style: normal;
+        }
+        .main-title2 {
+            font-size: 40px;
+            font-family: "Roboto";
+            font-weight: 500;
+            font-style: normal;
+        }
+        footer {
+            font-family: Helvetica;
             text-align: center;
-            padding: 20px;
-            background-color: 	#5e77d3;
+            background-color: 		#193468;
             width: 100%;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -24,15 +52,15 @@
             width: 100%;
             max-width: 1200px;
             margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0px 2px 5px rgb(175, 238, 238);
-            background-color: #9aadec;
-            border-radius: 8px;
+            padding: 8px;
+            box-shadow: 0px 4px 10px rgb(47, 48, 48);
+            background-color: #193468;
+            border-radius: 10px;
         }
         form {
             flex: 1;
             padding: 20px;
-            background-color: #dce3fa;
+            background-color: #e0f0ef;
             border-radius: 8px;
             margin-right: 20px;
         }
@@ -54,7 +82,7 @@
         }
         form .button {
             height: 40px;
-            background-color: #00BFFF;
+            background-color:#193468;
             border-radius: 4px;
             border: none;
             width: 48%;
@@ -63,13 +91,13 @@
             cursor: pointer;
         }
         form .button.bg-reset {
-            background-color: orangered;
+            background-color: rgb(215, 68, 68);
         }
         aside {
             flex: 1;
             padding: 20px;
             border-radius: 8px;
-            background-color: 	#dce3fa;
+            background-color: 	#e0f0ef;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -90,6 +118,13 @@
             font-size: 14px;
             color: #d22727;
         }
+        footer {
+            font-weight: bold;
+            font-family: helvetica;
+            color: #f7f7f7;
+            font-size: 12px;
+            padding: 10px;
+        }
         @media (max-width: 768px) {
             main {
                 flex-direction: column;
@@ -99,3 +134,77 @@
                 margin-bottom: 20px;
             }
         }
+
+        /* KEBUTUHAN FONT */
+        .roboto-thin {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+          }
+          
+          .roboto-light {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+          }
+          
+          .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+          
+          .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          }
+          
+          .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+          
+          .roboto-black {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+          }
+          
+          .roboto-thin-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+          }
+          
+          .roboto-light-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+          }
+          
+          .roboto-regular-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+          }
+          
+          .roboto-medium-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+          }
+          
+          .roboto-bold-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+          }
+          
+          .roboto-black-italic {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+          }
+          
